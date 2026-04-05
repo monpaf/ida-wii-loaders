@@ -3,8 +3,19 @@
 The REL, DOL, & Apploader files are found in Nintendo Gamecube/Wii games.
 
 ## Environment
-* Visual Studio 2022
-* IDA Pro 9.1 SDK
+* Visual Studio 2026
+* [IDA SDK](https://github.com/HexRaysSA/ida-sdk)
+
+## Building with CMake
+1. Clone the repository
+2. Start x64 Native Tools Command Prompt for VS 2026
+3. Navigate to the repository folder
+4. Use the following commands to build the loader:
+```bash
+cmake .
+cmake --build . --config Release
+```
+5. The built loader will be located in the `build/Release` folder, and can be copied to the IDA loaders folder
 
 ## DOL Loader
 A modified fork of the DOL loader by Stefan Esser, source from [here](http://hitmen.c02.at/html/gc_tools.html).
